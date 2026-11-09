@@ -16,6 +16,7 @@
     font-weight: bold;
     text-decoration: none;
     color: var(--primary);
+    transition: all 0.1s;
 }
 
 .logoLink svg {
@@ -24,6 +25,5 @@
 }
 
 .logoLink:hover {
-    filter: brightness(50%);
-    transition: all 0.1s;
+    filter: brightness(80%);
 }
