@@ -8,6 +8,7 @@ import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 import { getNextCycle } from "../../utils/getNextCycle";
 import { getNextCycleType } from "../../utils/getNextCycleType";
 import { TaskActionTypes } from "../../contexts/TaskContext/taskAction";
+import { Tips } from "../Tips";
 
 export function MainForm(){
     const taskNameInput = useRef<HTMLInputElement>(null)
@@ -53,7 +54,7 @@ export function MainForm(){
 
                     <div className="formRow">
                         <p>
-                            Próximo intervalo é de 25min
+                            <Tips />
                         </p>
                     </div>
 
