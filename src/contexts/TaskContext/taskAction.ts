@@ -11,7 +11,6 @@ export type TaskActionModel = {
     payload: TaskModel
 } | {
     type: TaskActionTypes.INTERRUPT_TASK,
-    payload: TaskModel
 } | {
     type: TaskActionTypes.RESET_STATE,
 }
