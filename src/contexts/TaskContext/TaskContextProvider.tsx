@@ -28,7 +28,6 @@ export function TaskContextProvider({children}: TaskContextProviderProps) {
 
         if(!state.activeTask) {
             worker.terminate()
-            return
         }
 
         worker.postMessage(state)
