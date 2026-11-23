@@ -31,6 +31,8 @@ export function TaskContextProvider({children}: TaskContextProviderProps) {
                 dispatch({type: TaskActionTypes.COUNT_DOWN, payload: {secondsRemaining: countDownSeconds}})
             }
         })
+        
+        document.title = `${state.formattedSecondsRemaining} - Chronos Pomodoro`
 
         if(!state.activeTask) {
             worker.terminate()
